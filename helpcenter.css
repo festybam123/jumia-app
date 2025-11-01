@@ -1,0 +1,64 @@
+*{
+     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+   
+.nav_cnt a{
+    text-decoration: none;
+}
+
+
+.nav_cnt a h2{
+    font-size: xx-large;
+    font-family: Verdana;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+
+.nav_cnt a::after{
+    content: '';
+}
+
+.nav_cnt{
+    display: flex;
+    margin: 30px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+.nav_cnt input{
+    width: 50%;
+    height: 40px;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+.nav_cnt button{
+    margin-left: 20px;
+    width: 65px;
+    color: white;
+    background-color: rgb(255, 166, 0);
+    border: 1px solid rgb(255, 166, 0);
+    border-radius: 5px;
+}
+
+.nav_cnt button:hover{
+    cursor: pointer;
+}
+
+
+.nav_cnt select{
+    margin-left: 15px;
+    width: 70px;
+
+}
+.nav_cnt h3{
+    font-size: x-large;
+    margin-left: 20px;
+    color: black;
+    margin-top: 7px;
+}
+
+.flex_cnt{
+    display:flex ;
+}

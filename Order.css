@@ -1,0 +1,50 @@
+Body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.signin_cnt img{
+    width: 5%;
+}
+
+input{
+    width: 29%;
+    height: 30px;
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+.button1{
+    width: 30%;
+    height: 35px;
+    background-color: rgba(255, 166, 0, 0.699);
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+h4{
+    color: orange;
+}
+
+a{
+    color: orange;
+}
+
+.button2{
+    background-color: rgba(0, 0, 255, 0.603);
+    border: 1px solid blue;
+    color: white;
+}
+
+span button{
+    width: 30%;
+    height: 35px;
+    border-radius: 5px;
+}
+span p{
+    color: rgba(0, 0, 0, 0.459);
+}

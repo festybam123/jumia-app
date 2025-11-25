@@ -21,8 +21,8 @@
         <div class="nav_cnt">
             
             <a href="./Home.html"><h2>JUMIA <i class="fa-solid fa-star" style="color: orange; font-size: 27px;"></i></h2></a>
-            <input type="text" placeholder="🔍Search products, brands and categories"><br>
-            <button >Search </button><i class="fa-solid fa-user" style="margin-top: 35px; margin-left: 5px; font-size: 20px; margin-left: 20px;"></i>
+            <input type="text" id="searchInput" placeholder="🔍Search products, brands and categories"><br>
+            <button onclick="searchProducts()">Search </button><i class="fa-solid fa-user" style="margin-top: 35px; margin-left: 5px; font-size: 20px; margin-left: 20px;"></i>
 
             <select name=""id="" onchange = "location = this.value;">
                 <option value="">Account</option>
@@ -63,6 +63,9 @@
 
             <div class="photo_cnt">
                 <img src="./image/Untitled-1.gif" alt="">
+                <!-- <img src="./image/gif1.gif" alt=""> -->
+                <!-- <img src="./image/jumia1.gif" alt=""> -->
+                <!-- <img src="./image/jumia gif.gif" alt=""> -->
             </div>
             <div class="rbar_cnt">
                <p>
@@ -151,10 +154,10 @@
                 <div class="extral_cnt1">
                     <a href=""> <img src="/image/extal1.jpg" alt=""><p>Music Pineer K9 double.. <br><b> #5,500 </b><br> <span>#23,700 <br></span>50 items left<progress value="50" max="100"></progress></p></a>           
                     <a href=""> <img src="/image/extal2.jpg" alt=""><p>Women Heating Pad Rapi.. <br><b>#12,900</b> <br> <span>#14,700</span> <br>48 items left</p><progress value="40" max="100"></progress></a>
-                    <a href=""> <img src="/image/extral3.jpg" alt=""><p>Foot Grinder Electric Pedi.. <br><b>#11,700</b> <br> <span>#15,700</span> <br>34 items left</p><progress value="30" max="100"></progress></a> 
+                    <a href=""> <img src="/image/extral3.jpg" alt=""><p>Foot Grinder Electric.. <br><b>#11,700</b> <br> <span>#15,700</span> <br>34 items left</p><progress value="30" max="100"></progress></a> 
                     <a href=""> <img src="/image/extral4.jpg" alt=""> <p>Castor Oil Sunny <br><b>#3,900</b> <br><span>#4,200</span> <br>35 items left</p><progress value="30" max="100"></progress></a>
                     <a href=""> <img src="/image/extral5.jpg" alt=""> <p>Cerave Cleanser<br><b>#4,950</b> <br><span>#5,200 <br></span>50 items left</p><progress value="70" max="100"></progress></a>
-                    <a href=""> <img src="/image/extral7.jpg" alt=""> <p>Anua Niaccinamide 10%+.. <br><b>#5.639 </b><br><span>#5,780 <br></span>49 items left</p><progress value="5" max="100"></progress></a>
+                    <a href=""> <img src="/image/extral7.jpg" alt=""> <p>Anua Niaccinamide.. <br><b>#5.639 </b><br><span>#5,780 <br></span>49 items left</p><progress value="5" max="100"></progress></a>
                 </div>
 
                     <!-- ITEMS SALES -->
@@ -236,7 +239,7 @@
                     <a href=""><img src="./image/blk5.jpg" alt=""><p>HITHIUM 1kWh Power st.. <br><b>#230,535</b><br><span>#250,900</span></p></a>
                     <a href=""><img src="./image/blk16.jpg" alt=""><p>Tibetan Silver Men Leath.. <br><b>#2,999</b><br><span>#3,500</span></p></a>
                 </div>
-                   <div class="main_cnt7">  
+                <div class="main_cnt7">  
                     <a href=""><img src="./image/blk7.jpg" alt=""><p>UNLIMITED Baggy Jogg.. <br><b>#9,000</b><br><span>#36,500</span></p></a> 
                     <a href=""><img src="./image/blk8.jpg" alt=""><p>DELL Optiplex 7040 SFF.. <br><b>#600,450</b><br><span>#700,000</span></p></a>
                     <a href=""><img src="./image/blk9.jpg" alt=""><p>Martell Cognac XO 70cl'..<br><b>#244,600</b><br><span>#204,112</span></p></a>
@@ -244,7 +247,7 @@
                     <a href=""><img src="./image/blk11.jpg" alt=""><p>15KG Dumbbell Set With.. <br><b>#34,700</b><br><span>#45,200</span></p></a>
                     <a href=""><img src="./image/blk12.jpg" alt=""><p>EA Sport PS4 FC26 - Play.. <br><b>#18,923</b><br><span>#25,300</span></p></a>
                 </div> 
-                   <div class="main_cnt7">  
+                <div class="main_cnt7">  
                     <a href=""><img src="/image/blk13.jpg" alt=""><p>Sony Playstation Ps5 Sli'.. <br><b>#832,789</b><br><span>900,000</span></p></a>
                     <a href=""><img src="./image/blk14.jpg" alt=""><p>Aeon 5Kg Twin Tub Wash.. <br><b>#125,000</b><br><span>153,120</span></p></a>
                     <a href=""><img src="./image/blk15.jpg" alt=""><p>Itel City 100 7.65mm" Sli..<br><b>#101,000</b><br><span>#120,110</span></p></a>
@@ -252,14 +255,23 @@
                     <a href=""><img src="./image/blk17.jpg" alt=""><p>HITHIUM 1kWh Power st.. <br><b>#250,535</b><br><span>#271,900</span></p></a>
                     <a href=""><img src="./image/blk18.jpg" alt=""><p>Oraimo Watch 5 Litev 2.0.. <br><b>#13,999</b><br><span>#27,500</span></p></a>
                 </div>
-                   <div class="main_cnt7">  
+                <div class="main_cnt7">  
                     <a href=""><img src="./image/blk19.jpg" alt=""><p>Elegant Ladies Latest Flat.. <br><b>#6,000</b><br><span>#9,500</span></p></a> 
                     <a href=""><img src="./image/blk20.jpg" alt=""><p>Blueing 15,6" Laptop j41.. <br><b>#237,450</b><br><span>#300,700</span></p></a>
                     <a href=""><img src="./image/blk21.jpg" alt=""><p>Chivas XV 15 Years Old R..<br><b>#53,600</b><br><span>#56,112</span></p></a>
                     <a href=""><img src="./image/blk22.jpg" alt=""><p>addigoes Outdoor Sport.. <br><b>#1,923</b><br><span>#5,300</span></p></a> 
                     <a href=""><img src="./image/blk23.jpg" alt=""><p>Mastera Baby Electric Swi.. <br><b>#107,700</b><br><span>#109,200</span></p></a>
                     <a href=""><img src="./image/blk24.jpg" alt=""><p>addigoes Outdoor Sport.. <br><b>#1,923</b><br><span>#5,300</span></p></a>              
-            </div>    
+                </div>  
+                </div>
+                   <div class="main_cnt7">  
+                    <a href=""><img src="./image/blk25.jpg" alt=""><p>Aeon 5KG twin Tub.. <br><b>#37,000</b><br><span>#67,500</span></p></a> 
+                    <a href=""><img src="./image/blk26.jpg" alt=""><p> insulator therm.. <br><b>#7,450</b><br><span>#20,700</span></p></a>
+                    <a href=""><img src="./image/blk27.jpg" alt=""><p>15KG Dumbbell Set..<br><b>#32,600</b><br><span>#50,112</span></p></a>
+                    <a href=""><img src="./image/blk28.jpg" alt=""><p>Sony Playsration ps5 Old R.. <br><b>#805,923</b><br><span>#900,300</span></p></a> 
+                    <a href=""><img src="./image/blk29.jpg" alt=""><p>Nevia Radiant Beauty.. <br><b>#7,700</b><br><span>#9,200</span></p></a>
+                    <a href=""><img src="./image/blk30.jpg" alt=""><p>Xiaomi Redmi A3s 6.71.. <br><b>#85,923</b><br><span>#90,300</span></p></a>              
+                </div>      
              <footer> 
                     
                 <div>
@@ -282,12 +294,9 @@
         </footer> 
         </div>
        
-    </div>
+    </div> 
     
-    <script>
-        new  Date();
-        document.getElementById("date").innerHTML = new Date();
-    </script>
+    <script src="Home.js"></script>
 
 </body>
 </html>
